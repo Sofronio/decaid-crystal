@@ -1,0 +1,18 @@
+{
+  "id": "crystal.reaplugin",
+  "name": "CRYSTAL Grinder (Reference)",
+  "author": "Decaid contributors",
+  "description": "Opt-in CRYSTAL grinder protocol using host-owned BLE, exposed as a Sensor.",
+  "version": "0.1.0",
+  "apiVersion": 1,
+  "permissions": ["transport.ble", "api"],
+  "drivers": [{
+    "id": "crystal",
+    "type": "sensor",
+    "ble": {"match": {"name": {"contains": "crystal"}}}
+  }],
+  "settings": {},
+  "api": [
+    { "id": "ui", "type": "http", "data": {} }
+  ]
+}
